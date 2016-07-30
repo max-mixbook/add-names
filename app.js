@@ -33,7 +33,7 @@ var app = (function() {
 
         }  
 
-        stats.setPeople(people.length);     
+        events.emit("peopleChanged", people.length);   
     }
         
     function _handleEnter(e) {

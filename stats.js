@@ -6,20 +6,17 @@ var stats = (function(){
     var statsModule = document.getElementById('statsModule');
     var peopleCount = document.getElementById('peopleCount');
     
-    _render();
+    events.on("peopleChanged", setPeople);
+    render();
 
-    function _render() {
+    function render() {
         peopleCount.innerHTML = "";
         peopleCount.appendChild(document.createTextNode(people));
     }
 
     function setPeople(newPeople) {
         people = newPeople;
-        _render();
+        render();
     }
-
-    return {
-        setPeople: setPeople
-    };
 
 })()
