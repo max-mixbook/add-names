@@ -28,3 +28,9 @@ span.delete {
     margin-left: 24px;
     border-radius: 50%;
 }
+
+#statsModule {
+    background-color: #DBDBDB;
+    padding: 24px;
+    max-width: 300px;
+}

@@ -31,7 +31,9 @@ var app = (function() {
             newPerson.appendChild(deleteBtn);
             deleteBtn.className = "delete";
 
-            }       
+        }  
+
+        stats.setPeople(people.length);     
     }
         
     function _handleEnter(e) {

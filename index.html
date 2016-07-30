@@ -6,13 +6,19 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
+        <div id = 'statsModule'>
+            <h3>Stats</h3>
+            <p>People: <span id = 'peopleCount'></span></p>
+        </div>
+        
         <div id='peopleModule'>
             <h1>People</h1>
             <input id='myInput' placeholder='Name' type='text' />
             <button id='addButton'>Add Person</button>
             <ul id='peopleList'></ul>
-            </div>
+        </div>
 
         <script src="app.js"></script>
+        <script src="stats.js"></script>
     </body>
 </html>
